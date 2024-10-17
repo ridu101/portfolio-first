@@ -46,7 +46,7 @@ nav {
 
 /* Shared styles */
 .back {
-    background-color:#FFF8F3;
+    background-color: #FFF8F3;
 }
 
 .primary {
@@ -112,114 +112,153 @@ nav ul li a {
 
 /* about styles */
 
-main{
+main {
     max-width: 1140px;
     margin: 0px auto;
     text-align: center;
 }
-.about{
+
+.about {
     margin-top: 100px;
     padding: 100px 100px;
     text-align: center;
 
-    
-   
+
+
 }
-.about-details{
+
+.about-details {
     display: flex;
     text-align: center;
     justify-content: center;
     justify-content: space-between;
 }
-.about-under{
+
+.about-under {
     padding: 20px 50px 20px 50px;
     border: 1px solid black;
     background-color: white;
-    
+
 }
+
 /* What i do section */
-.skills{
+.skills {
     margin-top: 100px;
+
 }
-.what-items{
+
+.what-items {
     background-color: #FFF8F3;
     gap: 10px;
     display: flex;
     text-align: left;
     margin-top: 50px;
-   
-   
+
+
 }
-.items{
-    
+
+.items {
+
     background-color: rgb(243, 236, 228);
     margin-right: 10px;
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
-   
-    
+
+
 }
+
 /* Summary of resume start here */
-.sum{
+.sum {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.resume{
+
+.resume {
     display: flex;
-    
-    
+
+
 }
-.education{
+
+.education {
     text-align: left;
     margin-right: 80px;
 }
-.experience{
+
+.experience {
     text-align: left;
 }
-.sum-button{
+
+.sum-button {
     margin-top: 50px;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
 }
+
 /* footer section starts here */
-.footer-back{
+.footer-back {
     background-color: antiquewhite;
 }
-.footer-section{
-    
-    
+
+.footer-section {}
+
+.foot-icons {
+    margin-right: 20px;
+
 }
-.foot-icons{
-   margin-right: 20px;
-   
-}
-.contact{
+
+.contact {
     text-align: left;
     margin-right: 300px;
 }
-.massege{
+
+.massege {
     text-align: left;
     margin-top: 200px;
-    
+
 }
-.footer-content{
-    display: flex;  
-    padding-left: 200px;
+
+.footer-content {
+    display: flex;
+    padding-left: 50px;
     padding-right: 50px;
     text-align: center;
     justify-content: center;
     align-items: baseline;
 
 }
-.foot-btn{
+
+.foot-btn {
     margin-top: 30px;
-    margin-left: 1040px;
+    margin-left: auto;
 }
-.name{
+
+.name {
     padding: 20px;
     margin-bottom: 20px;
 }
 
+/* Responsive Media Query */
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .what-items {
+        flex-direction: column;
+    }
+
+    .resume {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+    .about-details {
+        flex-direction: column;
+    }
+}
